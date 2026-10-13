@@ -1,0 +1,16 @@
+# Intermediate build artifacts
+/build/
+*.o
+/kernel.elf
+/isodir/
+
+# Keep kfs2.iso trackable: the bootable image is a graded deliverable.
+
+# macOS metadata
+.DS_Store
+._*
+
+# Editor temporary files
+*.swp
+*.swo
+*~
