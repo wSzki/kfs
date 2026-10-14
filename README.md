@@ -44,6 +44,17 @@ BIOS (16-bit real mode)
 7. `src/kmain.c` — everything wired together.
 8. Bonus: `src/keyboard.c` + `src/shell.c` — PS/2 polling, command dispatch.
 
+### Interactive learning workbook
+
+Open `learn.html` in a browser. It contains 14 modules and 69 multiple-choice questions.
+Each lesson includes code examples, paper exercises, and defense prompts.
+
+The file works offline. It uses no external fonts, libraries, or images.
+
+The notebook saves answers and notes when browser storage works.
+If saving fails, export your notes before you close the page.
+Before you change browsers or move the file, export your notes.
+
 ## 3. Build & run
 
 ```sh
