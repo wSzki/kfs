@@ -38,11 +38,11 @@ A wrong answer is a diagnostic, not a grade. We record the misconception, reteac
 
 ### Progress dashboard
 
-**Current topic:** M00; introductory explanation provided, baseline answer pending. **Validated modules:** none. Update these fields only when progress changes.
+**Current topic:** M00; learner recognizes that hosted `printf` is unavailable; explanation of the missing library/OS support is next. **Validated modules:** none. Update these fields only when progress changes.
 
 | Module | Topic | Progress | Next evidence |
 |---|---|---|---|
-| M00 | What this project actually does | Introduced; assessment pending | Your answer to M00-Q1 |
+| M00 | What this project actually does | Assessment in progress | Explain why the kernel needs its own output implementation |
 | M01 | Bytes, addresses, registers, and essential C | Not started | Memory/pointer worksheet |
 | M02 | The assembly you actually need | Not started | Instruction and stack trace |
 | M03 | Boot and the Multiboot handoff | Not started | Boot timeline and header reasoning |
@@ -66,6 +66,8 @@ Append one row after each session. Name exact checkpoints, for example `M02-Q`, 
 | Date | Module / checkpoint | Your answer or exercise evidence | Misconception / blocker | Next action |
 |---|---|---|---|---|
 | 2026-10-14 | M00 introduction; M00-Q1 pending | Workbook and first explanation provided; no learner answer assessed | None assessed yet | Answer M00-Q1 in your own words |
+| 2026-10-14 | M00-Q1 partial answer | Answered “an os?”; identifies the operating system, but has not yet named concrete services | Distinction between the OS and the services it provides still to assess; no checkpoints earned | Explain who handles a normal C program's request to print to a Linux terminal |
+| 2026-10-14 | M00-Q1 follow-up; partial evidence | Answered “printf wouldnt exist?”; correctly identifies that ordinary hosted printf is not available in this kernel | Library function versus underlying OS service not yet assessed; M00-E/Q remain unchecked | Explain whether copying printf alone would supply the missing output support |
 
 For a longer answer or transcript, add a dated note below this table and link to its heading from the row. Do not invent output or mark a command successful from a source comment.
 
