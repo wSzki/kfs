@@ -14,7 +14,7 @@ This is a workbook, not a completed evaluation report. **No understanding, build
 
 For one small topic at a time:
 
-1. **Explain:** I explain it in simple terms, define new words, and connect it to your code. You can interrupt with questions.
+1. **Explain:** use a small visual (ASCII diagram, memory layout, or flow) plus a concrete example and brief prose; the learner explicitly prefers visual explanations. Define new words and connect them to the code. You can interrupt with questions.
 2. **Locate:** we look at a small relevant source section, not an entire heavily commented file at once.
 3. **Recall:** close the explanation and answer a few questions in your own words. I ask one question at a time unless you request a larger batch.
 4. **Apply:** you draw a diagram, calculate a value, trace instructions, or make a small temporary change. For runtime exercises, predict before running.
@@ -38,11 +38,11 @@ A wrong answer is a diagnostic, not a grade. We record the misconception, reteac
 
 ### Progress dashboard
 
-**Current topic:** M00 wrap-up requested. Core kernel/output/GDT/stack distinctions covered; presenting remaining assignment constraints and awaiting a final learner project summary. **Validated modules:** none. Update these fields only when progress changes.
+**Current topic:** M00 introduction session closed with a learner recap. Boot/build/QEMU path and the GDT's range/rule model demonstrated; stack dump needs the “stack memory specifically” qualifier. Subject scope and 32-bit/i386 meaning remain the next teaching targets. **Validated modules:** none; M00-E/Q/P/R remain pending.
 
 | Module | Topic | Progress | Next evidence |
 |---|---|---|---|
-| M00 | What this project actually does | Assessment in progress | Give the final project summary, distinguish mandatory/bonus and partner responsibility, and identify a remaining gap |
+| M00 | What this project actually does | Assessment in progress | Start next session with brief visual recall; explain host versus i386 target and review subject/bonus/partner scope, then complete the project explanation |
 | M01 | Bytes, addresses, registers, and essential C | Not started | Memory/pointer worksheet |
 | M02 | The assembly you actually need | Not started | Instruction and stack trace |
 | M03 | Boot and the Multiboot handoff | Not started | Boot timeline and header reasoning |
@@ -95,6 +95,7 @@ Append one row after each session. Name exact checkpoints, for example `M02-Q`, 
 | 2026-10-18 | M00 session wrap-up begun | Learner requests wrapping up today's introduction; no final recap assessed yet | Present remaining scope: 32-bit i386, GDT at 0x800 with six usable entries plus null, usable stack/readable dump, source/Makefile/bootable image under the subject's 10 MB limit, gated bonus shell, and both partners' ability to explain all modules | Learner gives a short own-words project summary and names one understood part and one remaining gap; assess checkpoints only from that answer, then save the next-session handoff |
 | 2026-10-18 | M00 teamwork discussion; final recap still pending | Asked how to divide implementation work efficiently between partners | Planning advice is not evidence that both partners understand the modules; no checkpoints changed. Recommend shared boot/contracts, separate output versus GDT ownership, then dump versus packaging, followed by cross-teaching and joint verification | Return to the final own-words project summary when ready; both partners must ultimately explain all modules |
 | 2026-10-18 | Partner plan saved; final recap still pending | Requested a Markdown record of the agreed work split for later; saved [PARTNER_SPLIT.md](PARTNER_SPLIT.md) with stages, shared interfaces, cross-teaching, and mandatory-before-bonus rules | Documentation maintenance only; no learning or runtime checkpoint earned | Resume the final M00 own-words summary; consult the partner plan when assigning implementation ownership |
+| 2026-10-18 | M00 final recap assessed; session handoff | Explained compiling a kernel on our machine, bootloader loading, and running in QEMU; described GDT as an array of ranges/rules; described dump as program values at a given time. Explicitly identified forgotten subject scope and unknown “32-bit/i386” meaning | Build/boot model and descriptor model demonstrated. Clarify that the CPU uses the GDT and that the dump covers stack memory, not all program values. Mandatory/bonus and partner scope not independently recalled; no full E/Q/P/R checkpoint earned. No build or runtime verification performed | Next session: brief visual recall, host ARM64 versus target i386 and 32-bit meaning, compact subject map, then final explanation/scope checks before M01. Partner split is saved separately |
 
 For a longer answer or transcript, add a dated note below this table and link to its heading from the row. Do not invent output or mark a command successful from a source comment.
 
